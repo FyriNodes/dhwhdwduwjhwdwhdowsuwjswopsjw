@@ -1,0 +1,76 @@
+# PteroStats config
+# If you need help, join our discord server here: https://discord.gg/zv6maQRah3
+
+# Bot Configuration
+token: 'Токен бота дискорд'
+presence:
+    text: ' за хостингом WexNodes'
+    type: 'watching' # can be 'watching', 'playing', 'listening', or 'competing'. for 'streaming' is not working for now
+    status: 'online' # can be 'online', 'idle', 'dnd', or 'invisible'
+
+# Discord Channel and Refresh Time Configuration
+channel: 'айди канала'
+refresh: 60
+
+# Panel Configuration
+panel:
+    url: 'сайт панельки'
+    key: 'клюь от панельки'
+
+# Message and Embed Configuration
+# leave '' if you want to disable option
+message:
+    content: ''
+    attachment: '' # If you enable attachment on message it upload the attachment first before sending or editing message and it will delay the stats
+
+embed:
+    title: 'WexNodes | Статистика узлов'
+    color: '5865F2'
+    description: 'Следущее обновление будет {{time}}' # You can use {{time}} to make "in X seconds" time format
+    footer: 'WexNodes 2022'
+    timestamp: true
+    thumbnail: ''
+    image: ''
+    field:
+        title: ''
+        description: '' # You can use {{time}} to make "in X seconds" time format
+
+# Message Button Configuration
+button:
+    enable: true
+    btn1:
+        label: 'Наш сайт'
+        url: 'https://wexnodes.xyz'
+    btn2:
+        label: ''
+        url: ''
+    btn3:
+        label: ''
+        url: ''
+    btn4:
+        label: ''
+        url: ''
+    btn5:
+        label: ''
+        url: ''
+
+# Status Message Configuration
+# How to use custom emoji: https://github.com/HirziDevs/PteroStats#using-custom-emoji
+status:
+    online: ':green_circle: Онлайн'
+    offline: ':red_circle: Оффлайн'
+
+# Nodes Settings
+# How to get nodes id: https://github.com/HirziDevs/PteroStats#blacklist-nodes
+nodes_settings:
+    blacklist: [] # You can add node id to remove the node from status embed (Example: "blacklist: [1]")
+    enable: true
+    servers: true
+    location: true
+    allocations: false
+    unit: 'gb' # You can use "gb", "mb", "tb", or "percent"
+
+# Panel Users and Servers Settings
+panel_settings:
+    servers: true
+    users: true
